@@ -1,0 +1,14 @@
+{
+  "name": "elite-dine",
+  "version": "1.0.0",
+  "description": "Elite Dine Restaurant - Full Stack Web Application",
+  "scripts": {
+    "install:all": "cd server && npm install && cd ../client && npm install",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm start",
+    "seed": "cd server && node data/seedMenu.js",
+    "build": "cd client && npm run build"
+  },
+  "keywords": ["restaurant", "react", "nodejs", "mongodb"],
+  "author": "Elite Dine"
+}

@@ -1,0 +1,231 @@
+/* ============================================================
+   Testimonials Section Styles
+   ============================================================ */
+
+.testimonials {
+  background: var(--color-bg-tertiary);
+}
+
+/* ---- Carousel ---- */
+.testimonials__carousel {
+  max-width: 780px;
+  margin: 0 auto 60px;
+  position: relative;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.testimonials__slide {
+  width: 100%;
+}
+
+.testimonials__card {
+  background: var(--color-bg-secondary);
+  border-radius: var(--radius-xl);
+  padding: 48px;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+
+.testimonials__quote-icon {
+  color: var(--color-primary);
+  font-size: 2rem;
+  opacity: 0.4;
+  position: absolute;
+  top: 28px;
+  right: 32px;
+}
+
+/* Stars */
+.star-rating {
+  display: flex;
+  gap: 4px;
+}
+
+.star {
+  font-size: 18px;
+  color: var(--color-border);
+  transition: color 0.2s ease;
+}
+
+.star--filled {
+  color: var(--color-primary);
+  fill: var(--color-primary);
+}
+
+/* Review text */
+.testimonials__review {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: var(--color-text);
+  line-height: 1.8;
+  font-style: italic;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Author */
+.testimonials__author {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-border);
+}
+
+.testimonials__avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--color-primary);
+  flex-shrink: 0;
+}
+
+.testimonials__author-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.testimonials__author-name {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--color-text);
+}
+
+.testimonials__author-role {
+  font-size: 0.82rem;
+  color: var(--color-primary);
+}
+
+.testimonials__author-date {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+/* ---- Navigation ---- */
+.testimonials__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.testimonials__nav-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid var(--color-border);
+  background: var(--color-bg-secondary);
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.testimonials__nav-btn:hover {
+  background: var(--color-primary);
+  color: #1a1a1a;
+  border-color: var(--color-primary);
+}
+
+.testimonials__dots {
+  display: flex;
+  gap: 8px;
+}
+
+.testimonials__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-border);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.testimonials__dot--active {
+  background: var(--color-primary);
+  width: 24px;
+  border-radius: var(--radius-full);
+}
+
+/* ---- Stats ---- */
+.testimonials__stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.testimonials__stat {
+  background: var(--color-bg-secondary);
+  border-radius: var(--radius-lg);
+  padding: 28px 20px;
+  text-align: center;
+  border: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  transition: all 0.3s ease;
+}
+
+.testimonials__stat:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-gold);
+}
+
+.testimonials__stat-num {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  line-height: 1;
+}
+
+.testimonials__stat-label {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.testimonials__stat-sub {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+/* ============================================================
+   Responsive
+   ============================================================ */
+@media (max-width: 768px) {
+  .testimonials__card {
+    padding: 32px 24px;
+  }
+
+  .testimonials__review {
+    font-size: 1rem;
+  }
+
+  .testimonials__stats {
+    grid-template-columns: 1fr;
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonials__card {
+    padding: 24px 20px;
+  }
+}
